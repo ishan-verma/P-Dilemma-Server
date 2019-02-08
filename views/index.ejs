@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>Server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body class="main" style="margin:20% 20% 20% 20%;">
+  <div class="container" style="width: 300px;">
+    <h1 id="round">Round No: <%= n+1 %></h1>
+    <form action="/next-round" method="POST">
+      <input name="lna" type="hidden">
+      <button id="myButton" onClick="refreshPage()" >Click me!</button>
+    </form>
+  </div>
+  </body>
+  </html>
